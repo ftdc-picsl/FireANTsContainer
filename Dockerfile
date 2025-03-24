@@ -10,8 +10,7 @@ RUN micromamba run -n fireants \
       pip install git+https://github.com/rohitrango/FireANTs.git
 
 ENV ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=1 \
-    ENV_NAME=fireants \
-    PYTHONHISTFILE=/tmp/python_history
+    ENV_NAME=fireants
 
 ENTRYPOINT ["/usr/local/bin/_entrypoint.sh"]
 CMD ["bash"]
